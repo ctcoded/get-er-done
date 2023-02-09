@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Header from './Header.js'
 import List from './List.js'
-import ListContainer from './ListContainer'
+import ListCardContainer from './ListCardCardContainer'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -14,7 +14,7 @@ function App() {
     <div>
         <Header isDarkMode={isDarkMode} onClickDarkMode={handleDarkModeClick} />
         <List />
-        <ListContainer />
+        <ListCardContainer />
     </div>
   
   );
