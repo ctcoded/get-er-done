@@ -8,6 +8,8 @@ function List() {
     return (
         <div>
             <h2>This is the List</h2>
+            <ItemForm />
+            <Filter />
             <ListItem />
         </div>
         
