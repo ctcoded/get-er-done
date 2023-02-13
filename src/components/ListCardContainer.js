@@ -1,7 +1,7 @@
 import React from 'react';
 import ListCard from './ListCard';
 
-function ListContainer() {
+function ListCardContainer() {
     return (
         <div>
             <h4>This is the list container</h4>
@@ -12,4 +12,4 @@ function ListContainer() {
 
 }
 
-export default ListContainer;
+export default ListCardContainer;
