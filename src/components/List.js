@@ -1,10 +1,19 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import ItemForm from './ItemForm';
 import Filter from './Filter';
 import ListItem from './ListItem';
 
 function List() {
     const [setselectedCategory, setsetselectedCategory] = useState("All")
+    const [items, setItems] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/grocery")
+        .then((r) => r.json())
+        .then((items) => setItems(items))
+    }, [])
+
+    console.log(items)
     return (
         <div>
             <h2>This is the List</h2>
