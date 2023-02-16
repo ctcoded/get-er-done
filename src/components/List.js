@@ -13,11 +13,15 @@ function List() {
         .then((items) => setItems(items))
     }, [])
 
+    function handleAdditem(newItem){
+        setItems([...items, newItem]);
+    }
+
     console.log(items)
     return (
         <div>
             <h2>This is the List</h2>
-            <ItemForm />
+            <ItemForm onAddItem={handleAdditem} />
             <Filter />
             <ListItem />
         </div>

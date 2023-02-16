@@ -1,29 +1,34 @@
 {
-    "grocery": [
-        {
-            "id": 1,
-            "name": "Cookies",
-            "category": "Dessert",
-            "isInCart": false
-          },
-          {
-            "id": 2,
-            "name": "lettuce",
-            "category": "Produce",
-            "isInCart": false
-            
-          },
-          {
-            "id": 3,
-            "name": "milk",
-            "category": "Dairy",
-            "isInCart": false
-          },
-          {
-            "id": 4,
-            "name": "cheese",
-            "category": "Dairy",
-            "isInCart": false
-          }
-    ]
+  "grocery": [
+    {
+      "id": 1,
+      "name": "Cookies",
+      "category": "Dessert",
+      "isInCart": false
+    },
+    {
+      "id": 2,
+      "name": "lettuce",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": 3,
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": 4,
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "name": "carrot",
+      "category": "produce",
+      "isIncart": false,
+      "id": 5
+    }
+  ]
 }
