@@ -4,7 +4,7 @@ import Filter from './Filter';
 import ListItem from './ListItem';
 
 function List() {
-    const [setselectedCategory, setsetselectedCategory] = useState("All")
+    const [selectedCategory, setSelectedCategory] = useState("All")
     const [items, setItems] = useState([])
 
     useEffect(() => {
@@ -18,12 +18,24 @@ function List() {
     }
 
     console.log(items)
+
+    const itemsToDisplay = items.filter((item) => {
+        if (selectedCategory === "All") return true;
+
+        return item.category === selectedCategory;
+
+    });
+
     return (
         <div>
             <h2>This is the List</h2>
             <ItemForm onAddItem={handleAdditem} />
             <Filter />
-            <ListItem />
+            <ul>
+                {itemsToDisplay.map((item) => (
+                    <ListItem key = {item.id} item = {item} />
+                ))}
+            </ul>
         </div>
         
     );
