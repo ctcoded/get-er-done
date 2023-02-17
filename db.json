@@ -1,12 +1,6 @@
 {
   "grocery": [
     {
-      "id": 1,
-      "name": "Cookies",
-      "category": "Dessert",
-      "isInCart": false
-    },
-    {
       "id": 2,
       "name": "lettuce",
       "category": "Produce",
