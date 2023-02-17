@@ -19,6 +19,10 @@ function List() {
 
     console.log(items)
 
+    function handleCategoryChange(category) {
+        setSelectedCategory(category);
+    }
+
     const itemsToDisplay = items.filter((item) => {
         if (selectedCategory === "All") return true;
 
@@ -30,7 +34,10 @@ function List() {
         <div>
             <h2>This is the List</h2>
             <ItemForm onAddItem={handleAdditem} />
-            <Filter />
+            <Filter 
+                category={selectedCategory}
+                onCategoryChange={handleCategoryChange}    
+            />
             <ul>
                 {itemsToDisplay.map((item) => (
                     <ListItem key = {item.id} item = {item} />
