@@ -29,6 +29,12 @@
       "category": "produce",
       "isIncart": false,
       "id": 5
+    },
+    {
+      "name": "cheese",
+      "category": "Dairy",
+      "isIncart": false,
+      "id": 6
     }
   ]
 }

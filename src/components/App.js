@@ -14,7 +14,7 @@ function App() {
     <div>
         <Header isDarkMode={isDarkMode} onClickDarkMode={handleDarkModeClick} />
         <List />
-        <ListCardContainer />
+        {/* <ListCardContainer /> */}
     </div>
   
   );
