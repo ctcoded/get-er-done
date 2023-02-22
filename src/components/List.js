@@ -8,7 +8,7 @@ function List() {
     const [items, setItems] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/grocery")
+        fetch("http://localhost:4000/grocery")
         .then((r) => r.json())
         .then((items) => setItems(items))
     }, [])

@@ -3,7 +3,7 @@ import React from 'react';
 function ListItem({item, onUpdateItem, onDeleteItem}) {
 
     function handleAddToCartClick() {
-        fetch(`http://localhost:3000/grocery/${item.id}`, {
+        fetch(`http://localhost:4000/grocery/${item.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -17,7 +17,7 @@ function ListItem({item, onUpdateItem, onDeleteItem}) {
     }
 
     function handleDeleteClick() {
-        fetch(`http://localhost:3000/grocery/${item.id}`, {
+        fetch(`http://localhost:4000/grocery/${item.id}`, {
             method: "DELETE",
         })
         .then((r) => r.json())
